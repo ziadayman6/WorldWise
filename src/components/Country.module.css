@@ -1,0 +1,35 @@
+.container {
+  background-color: #242a2e;
+  border-bottom: 1px solid #00c46a;
+  border-radius: 15px;
+  padding: 0px 0px 1vw;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.container p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0px 0px;
+  padding: 1.5vw 0px !important;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+}
+
+@media (max-width:600px){
+  .header{
+    font-size: 4vw;
+    padding: 3vw 0px !important;
+  }
+}

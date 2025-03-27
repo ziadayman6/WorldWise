@@ -1,0 +1,50 @@
+.page {
+  height: 90vh;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  background-color: #2d3439;
+  align-items: center;
+}
+
+.outer {
+  background-color: transparent;
+  border: 3px solid #00c46a;
+  border-radius: 50%;
+  height: 7vw;
+  width: 7vw;
+  border-style: none none solid solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2s linear infinite;
+}
+
+.inner {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 6.5vw;
+  height: 6.5vw;
+  border-radius: 50%;
+  border-style: solid solid none none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .outer {
+    height: 13vw;
+    width: 13vw;
+  }
+  .inner {
+    width: 11vw;
+    height: 11vw;
+  }
+}

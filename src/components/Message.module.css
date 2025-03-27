@@ -1,0 +1,10 @@
+.message {
+  font-size: 1vw;
+  text-align: center;
+}
+
+@media (max-width:600px){
+  .message{
+    font-size: 3vw;
+  }
+}

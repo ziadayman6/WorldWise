@@ -1,0 +1,86 @@
+.container {
+  height: 80%;
+  margin-top: 2vw;
+  width: 70%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.child {
+  background-color: #42484d;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5vw;
+  border-radius: 10px;
+  border-bottom: 2px solid #00c46a;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.row p {
+  font-size: 1.3vw;
+}
+
+.child span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9vw;
+  opacity: 0.5;
+}
+
+.child div {
+  padding: 0;
+  margin-bottom: 2vw;
+}
+
+.child a {
+  color: #00c46a;
+}
+
+.child p,
+.child span,
+.child a {
+  padding: 0;
+  margin: 0;
+}
+
+.back {
+  width: 25%;
+  margin-top: 1vw;
+  font-size: 1vw;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+  .child {
+    padding: 4vw;
+  }
+  .child a{
+    font-size: 3.5vw;
+  }
+  .child span{
+    font-size: 2.5vw;
+  }
+  .row p{
+    font-size: 3.5vw; 
+  }
+  .child div{
+    margin-bottom: 5vw;
+  }
+  .back {
+    width: 30%;
+    font-size: 2.5vw;
+  }
+}

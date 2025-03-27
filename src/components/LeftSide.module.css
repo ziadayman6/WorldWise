@@ -1,0 +1,31 @@
+.image{
+    width: 30%;
+}
+
+.copy{
+    font-size: 1vw;
+    opacity: 0.5;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+}
+
+@media (max-width:600px){
+    .image{
+        width: 35%;
+        margin-top: 3vw;
+    }
+    .copy{
+        font-size: 2.5vw;
+        margin-bottom: -0.5vw;
+    }
+    .lists{
+        margin: 10vw 0px;
+        height: fit-content;
+    }
+}

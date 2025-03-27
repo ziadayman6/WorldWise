@@ -1,0 +1,32 @@
+.list {
+  background-color: #596b77;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  font-family: "Arimo", serif;
+}
+
+.list :global(.active) {
+  background-color: #00c46a;
+  color: black;
+}
+
+@media (max-width:600px){
+  .list{
+    margin-bottom: 2vw;
+  }
+  .list a{  
+    font-size: 2.8vw;
+    padding: 3vw 3vw;
+  }
+}
